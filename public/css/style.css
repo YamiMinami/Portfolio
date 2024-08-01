@@ -14,6 +14,7 @@ body {
         "Footer";
     height: 100vh;
     width: 100vw;
+    grid-template-rows: 1fr auto auto;
 }
 
 /* Navbar */
@@ -24,15 +25,18 @@ body {
     padding-left: 2em;
 }
 
-#logo {
-    width: 10em;
+header {
+    position: absolute; 
+    top: 0;
+    width: 100%; 
+    z-index: 1000; 
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: 	#e7e0ce;
+    background-color: rgba(231, 224, 206, 0.7);
     padding: 5px 0 5px 0;
     z-index: 1000;
 }
@@ -63,6 +67,7 @@ header {
 
 main {
     grid-area: Main;
+    position: relative;
 }
 
 footer {
