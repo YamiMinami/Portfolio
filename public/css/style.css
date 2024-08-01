@@ -14,7 +14,7 @@ body {
         "Footer";
     height: 100vh;
     width: 100vw;
-    grid-template-rows: 1fr auto auto;
+    grid-template-rows: auto 1fr auto;
 }
 
 /* Navbar */
@@ -36,9 +36,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(231, 224, 206, 0.7);
-    padding: 5px 0 5px 0;
+    background-color: rgba(231, 224, 206, 0.8);
+    padding: 5px;
     z-index: 1000;
+    width: 100%;
 }
 
 .navbar ul {
@@ -49,7 +50,7 @@ header {
 }
 
 .navbar a {
-    color: white;
+    color: rgba(255, 255, 255, 0.7);
     text-decoration: none;
 }
 
@@ -63,11 +64,37 @@ header {
 
 header {
     grid-area: Header;
+    position: relative;
+    z-index: 1000;
+    width: 100%;
 }
 
 main {
     grid-area: Main;
     position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin-top: -60px;
+}
+
+
+.image-container {
+    position: absolute; 
+    top: 0; 
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 0; 
+}
+
+.image-container img {
+    width: 100%;
+    object-fit: cover; 
+}
+
+.text {
+    position: relative;
+    z-index: 2; 
 }
 
 footer {
