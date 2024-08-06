@@ -14,7 +14,7 @@ body {
         "Footer";
     height: 100vh;
     width: 100vw;
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: 5% auto auto;
 }
 
 /* Navbar */
