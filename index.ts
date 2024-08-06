@@ -38,7 +38,8 @@ app.get("/contact", (req, res) => {
 app.get("/developers", (req, res) => {
     res.render("developers", {
         title: "Hello World",
-        message: "Hello World"
+        message: "Hello World",
+        nina: "nina"
     })
 });
 
