@@ -21,6 +21,13 @@ app.get("/", (req, res) => {
     })
 });
 
+app.get("/about", (req, res) => {
+    res.render("index", {
+        title: "Hello World",
+        message: "Hello World"
+    })
+});
+
 app.get("/contact", (req, res) => {
     res.render("contact", {
         title: "Hello World",
