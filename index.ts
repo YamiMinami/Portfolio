@@ -21,6 +21,28 @@ app.get("/", (req, res) => {
     })
 });
 
+app.get("/about", (req, res) => {
+    res.render("index", {
+        title: "Hello World",
+        message: "Hello World"
+    })
+});
+
+app.get("/contact", (req, res) => {
+    res.render("contact", {
+        title: "Hello World",
+        message: "Hello World"
+    })
+});
+
+app.get("/developers", (req, res) => {
+    res.render("developers", {
+        title: "Hello World",
+        message: "Hello World"
+    })
+});
+
+
 app.listen(app.get("port"), () => {
     console.log("Server started on http://localhost:" + app.get("port"));
 });
